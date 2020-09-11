@@ -1,0 +1,57 @@
+.customContainer {
+    background-color: rgb(47, 47, 51);
+    color: whitesmoke;
+}
+
+.buttonPink {
+    background-color: #f90065;
+}
+
+.badgeBlue {
+    background-color: blue;
+}
+
+.pastila {
+    border-radius: 26px;
+    border-width: 1px;
+    border-color: rgb(167, 167, 167);
+    font-weight: bold;
+}
+
+.blueCustom, .blueCustomOutline {
+    background-color: rgb(0, 170, 192);
+    color: whitesmoke;
+}
+
+.blueCustomOutline {
+    background-color: whitesmoke;
+    color: rgb(0, 170, 192);
+}
+
+.buttonCustom {
+    padding: 10px 25px 10px 25px;
+    border-radius: 3px;
+    border: 2px solid;
+}
+
+.redCustom, .buttonCustomRed {
+    background-color: red;
+    color: white;
+}
+
+.buttonCustomRed {
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    padding: 10px 25px 10px 25px;
+    text-transform: uppercase;
+    border: 2px solid red;
+}
+
+.buttonCustomRedOutline {
+    background-color: #fff;
+    color: red;
+}
+
+.hrefNoDec {
+    text-decoration: none;
+    color: inherit;
+}

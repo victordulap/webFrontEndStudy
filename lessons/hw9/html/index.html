@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="D:\HTML_step\hw9\bootstrap\css\bootstrap.min.css">
+    <script type="text/javascript" src="D:\HTML_step\hw9\bootstrap\js\bootstrap.min.js"></script>
+    <link href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="D:\HTML_step\hw9\css\style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand sticky-top" style="background-color: #383838;">
+
+        <div class="collapse navbar-collapse  d-flex justify-content-center" id="navbarNav">
+            <a class="navbar-brand p-0 mr-5" href="#" id="bigLogo"><i>Baelerry</i></a>
+
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link p-4 pr-5 pl-5 mr-2" href="#"><i>Caracteristici</i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-4 pr-5 pl-5 mr-2" href="#"><i>Livrare</i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-4 pr-5 pl-5 mr-2" href="#"><i>Galerie</i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-4 pr-5 pl-5 mr-2" href="#"><i>Comanda acum</i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid main text-light">
+        <div class="container">
+            <h1 class="importantText text-center p-2"><i>Portmoneu Baellerry Business</i></h1>
+            <div class="row mt-0">
+
+                <div class="col-6">
+                    <h4 class="importantText text-center p-1">Accesoriul perfect pentru barbati</h4>
+                    <div id="textInfo">
+                        Bani, Documente, permis de conducere, pașaport, carduri bancare toate acestea se încadrează
+                        confortabil în aceast portmoneu elegant pentru bărbați. Calitatea și funcționalitatea bună nu
+                        vor lăsa pe nimeni indiferent!
+                    </div>
+
+                    <div class="row ml-0 mt-3 mr-0">
+                        <div class="col-6 p-2 pret" id="pretOld">
+                            <p class="textMoney"><span style="text-decoration: line-through;">499 Lei</span></p>
+                            <p>Pret vechi</p>
+                        </div>
+                        <div class="col-6 p-2 pret" id="pretNew">
+                            <p class="textMoney">399 Lei</p>
+                            <p>Pret nou</p>
+                        </div>
+                    </div>
+
+                    <h4 class="importantText text-center p-2" style="color:#b35a1b">Până la sfârșitul promoției a ramas:
+                    </h4>
+
+
+                    <div class="timeBox mb-2">
+                        <div class="row m-2">
+                            <div class="timeBox col m-2">
+                                <p class="textTime">00</p>
+                                <hr>
+                                <p>zile</p>
+                            </div>
+                            <div class="timeBox col m-2">
+                                <p class="textTime">00</p>
+                                <hr>
+                                <p>ore</p>
+                            </div>
+                            <div class="timeBox col m-2">
+                                <p class="textTime">00</p>
+                                <hr>
+                                <p>minute</p>
+                            </div>
+                            <div class="timeBox col m-2">
+                                <p class="textTime">00</p>
+                                <hr>
+                                <p>secunde</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-6 p-4 mb-2" id="buyForm" style="color:black">
+                    <form style="font-weight: bold; action="\contact.js">
+                        <div class="form-group">
+                            <label for="nrTel">Numarul Dvs. de telefon<span style="color:red;"> *</span></label>
+                            <input type="tel" class="form-control" name="nrTel" aria-describedby="emailHelp"
+                                placeholder="+37378128147">
+                            <!-- <small class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                        </div>
+
+                        <p class="mb-0 mt-4">Culoarea portmoneului</p>
+                        <div class="form-check mt-0">
+                            <input class="form-check-input" type="checkbox" name="culoareNeagra" id="culoareNeagra"
+                                value="true" checked>
+                            <label class="form-check-label" for="culoareNeagra">
+                                Negru
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="culoareCafenie" id="culoareCafenie"
+                                value="true">
+                            <label class="form-check-label" for="culoareCafenie">
+                                Cafeniu
+                            </label>
+                        </div>
+
+                        <div class="form-group mt-4">
+                            <label for="detaliiLivrare">Adresa Livrarii si alte detalii ( dacă livrarea
+                                este înafara Chişinăului indicaţi Numele şi Prenumele)<span style="color:red;">
+                                    *</span></label>
+                            <textarea class="form-control" name="detaliiLivrare" id="detaliiLivrare" rows="5" style="max-height: 300px;"></textarea>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="robotCheck" id="robotCheck"
+                                value="true">
+                            <label class="form-check-label" for="robotCheck">
+                                I am not a robot
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-block mt-5" id="btnComanda">Plaseaza Comanda</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

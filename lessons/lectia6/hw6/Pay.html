@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- Comentariul -->
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="html,lectia1,css">
+	<meta name="description" content="Acest site este realizat pentru programarea WEB">
+	<title>HTML Lectia 1 </title>
+	<!-- librarii -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+
+	<header>
+		<h1>Site-ul meu</h1>
+		<p>Slogan pt site-ul meu</p>
+	</header>
+
+	<nav>
+		<a href="Index.html"><i class="fa fa-home"></i>Acasa</a>
+		<a href="Galerie.html"><i class="fa fa-photo"></i>Galerie</a>
+		<a href="Contact.html"><i class="fa fa-phone"></i>Contact</a>
+		<a href="Pay.html" class="active"><i class="fa fa-credit-card"></i>Pay</a>
+		<a href="Register.html"><i class="fa fa-sign-in"></i>Register</a>
+		<span><a href="About.html"><i class="fa fa-info-circle"></i>Info</a></span>
+	</nav>
+
+	<!-- <i class="fa fa-home">vasea</i> -->
+	<!-- <i class="fa fa-home fa-2x"></i> fa-2x il mareste de 2x -->
+
+	<div id="main">
+		Aici o sa fie continutul <br>
+
+		<div class="background" id="content">
+			<label for="card"><i class="fa fa-credit-card" style="color: black;"></i>Card: </label> <br>
+			<input type="input" name="card" placeholder="ex: 123456789012"> <br>
+			<label for="cvc">CVC cod: </label> <br>
+			<input type="input" class="shorter" name="cvc" placeholder="ex: 1243"> <br>
+			<label for="owner">Card Owner: </label> <br>
+			<input type="input" name="owner"> <br>
+			<label for="expDate">Expiration date: </label> <br>
+			<input type="month" name="expDate"> <br>
+			
+			<hr>
+
+			<p>Sum to pay: <span>0.00$</span></p>
+
+			<input type="submit" value="Transact" onclick="butonulMeu()">
+		</div>
+
+		<div class="background" id="sidebar">
+			<section>
+				<article class="articole" id="recent">
+					Aici o sa fie articolele recente
+				</article>
+				<article class="articole" id="curs-valutar">
+					Aici o sa fie articolele recente
+				</article>
+			</section>
+		</div>
+
+		<div id="clear"></div>
+	</div>
+
+	<div id="footer">
+		<section id="footer-left">
+			Copyright 2020 ©
+		</section>
+
+		<section id="footer-right">
+			<address>
+				<a href="mailto:test@test.com">Email: test@test.com</a><br>
+				<a href="tel:+37371829501">Tel: +37371829501</a><br>
+				Adresa: str. Aerodromului 5 <br>
+			</address>
+		</section>
+	</div>
+
+</body> <!-- Acesta este sfarsitul tagurilor body -->
+
+
+</html>

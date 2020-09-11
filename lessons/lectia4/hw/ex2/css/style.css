@@ -1,0 +1,21 @@
+body {
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    background-image: url('https://i.imgur.com/NFBcqBP.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 100px;
+    font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
+    color: white;
+}
+
+p {
+    margin-top: 5%;
+    width: 50%;
+    background-color: whitesmoke;
+    font-size: 20px;
+    padding: 10px;
+}

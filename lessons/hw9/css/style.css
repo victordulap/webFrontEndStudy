@@ -1,0 +1,102 @@
+.main {
+    background-image: url(http://portmoneu.online/wp-content/uploads/2019/12/Vine-Vera-Gentlemen-Theme.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar a {
+    color: snow;
+    transition-delay: 0.05s;
+    transition-duration: 0.2s;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    color: snow;
+    background-color: rgb(199, 113, 0);
+}
+
+#bigLogo {
+    font-size: 50px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#bigLogo:hover {
+    background: inherit;
+}
+
+.importantText {
+    color: white;
+    text-shadow: -2px 2px 0px black;
+    font-weight: bolder;
+}
+
+#textInfo {
+    padding: 8px 8px 8px 8px;
+    background-color: rgba(28, 28, 28, 0.55);
+    border-style: double;
+    border-width: 3px;
+    border-color: #0c0c0c;
+}
+
+.pret {
+    border: 3px solid;
+    text-align: center;
+    font-size: 20px;
+}
+
+#pretOld {
+    background-color: black;
+    border-color: #8b4513;
+}
+
+#pretNew {
+    background-color: #8b4513;
+    border-color: black;
+}
+
+.textMoney {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.timeBox {
+    padding: 10px;
+    background-color: rgba(28, 28, 28, 0.55);
+    border-style: solid;
+    border-width: 3px;
+    border-color: #e4e4e4;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+.timeBox hr {
+    background-color: #dadada;
+    width: 80%;
+    height: 2px;
+}
+
+.textTime {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+#buyForm {
+    border-radius: 15px;
+    background: #804000;
+    box-shadow: 0px 0px 5px #f5f4f4;
+    border: 1px solid whitesmoke;
+}
+
+#btnComanda {
+    border-radius: 0px;
+    border: 1px solid whitesmoke;
+    background-color: black;
+    color: whitesmoke;
+    font-weight: bolder;
+    /* margin-top: 6vh; */
+}

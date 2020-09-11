@@ -1,0 +1,80 @@
+/*
+SELECTOR1, SELECTOR2 ... SELECTOR_N
+{
+	ATRIBUT1: val1;
+	ATRIBUT2: val1, val2, valN;
+}
+*/
+
+/*h1
+{
+	color: blue;
+}
+
+h1
+{
+	font-size: 40px;
+} putem si asa */
+
+body
+{
+	color: black;
+	background-color: #152129;
+	font-family: Gotham, Helvetica, sans-serif;
+}
+
+h1
+{
+	color: blue;
+	font-size: 40px;
+	background-color: red;
+	font-weight: bolder;	
+}
+
+h2, h3
+{
+	color: pink;
+	font-size: 30px;
+}
+
+h4
+{
+	writing-mode: horizontal-tb;/*vertical-lr;*/
+	word-spacing: 20px;
+	letter-spacing: 10px;
+	text-transform: capitalize; /*uppercase*/
+	/*text-decoration: none;  sterge underline bold etc */
+	text-decoration: line-through;
+	text-decoration-color: gray;
+	text-shadow: 5px 5px 3px blue;
+	/*5 pe x 5 pe y 3px vlloaarea blurului*/
+}
+
+a
+{
+	color: green;
+	text-decoration: none;
+}
+
+* /* * inseamna totul ca in sql */
+{
+	color: red;
+}
+
+/*--------------------------------------------------------------*/
+
+header
+{
+	background-color: red;
+	min-height: 50px;
+}
+
+#par1
+{
+	color: red;
+}
+
+.parClass
+{
+	color: blue;
+}

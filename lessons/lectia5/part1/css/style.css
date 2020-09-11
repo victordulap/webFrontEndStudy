@@ -1,0 +1,354 @@
+body {
+	color: black;
+	background-color: rgb(55, 55, 33);
+	font-size: 18px;
+	font-weight: 500;
+	/*font-family: 'Arial Narrow' , Helvetica , sans-serif;
+	word-spacing: 10px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	text-decoration: line-through;
+	text-shadow: 20px 20px 4px blue; */
+	background-image: url('../images/imagine.jpg');
+	background-attachment: scroll;
+}
+
+a {
+	text-decoration: underline;
+	text-decoration-color: orange;
+}
+
+h1 {
+	color: blue;
+	font-size: 20px;
+}
+
+h2, h3 {
+	color: orange;
+}
+
+header {
+	/*min-height: 100px;*/
+	background-color: white;
+	text-align: center;
+	border-radius: 10px 10px 0px 0px;
+	padding: 5px;
+}
+
+header h1 {
+	font-size: 30px;
+	color: gray;
+}
+
+header h1::before {
+	/*content: "\2713";*/
+	font-family: FontAwesome;
+	content: "\f095";
+}
+
+header h1::after {
+	/*content: "\2713";*/
+	font-family: FontAwesome;
+	content: "\f095";
+}
+
+::selection {
+	background-color: orange;
+}
+
+#paragraful1 {
+	color: red;
+}
+
+#paragraful2 {
+	color: orange;
+}
+
+.clasa_paragraf {
+	font-size: 20px;
+}
+
+#paragraf_special {
+	color: blue;
+}
+
+#main {
+	background-color: #545955;
+	min-height: 400px;
+	width: auto;
+}
+
+#content {
+	/*background-image: url('../images/imagine.jpg') ;*/
+	/*background-image: tipulgradient(95deg, color1, c2 ..,, cn); */
+	/*background-image: linear-gradient(180deg, red, blue, purple);*/
+	background-image: radial-gradient(red, blue, purple);
+	float: left;
+	width: 70%;
+	/*min-height: 3000px;*/
+	margin-left: 10px;
+	padding: 10px;
+	border: 2px solid white;
+	box-shadow: 5px 5px 5px white;
+	background-attachment: fixed;
+	/*opacity: 0.5;*/
+}
+
+#sidebar {
+	float: right;
+	width: 20%;
+	min-height: 300px;
+	margin-right: 10px;
+	padding: 10px;
+	border: 3px double white;
+	box-shadow: 5px 5px 5px white;
+}
+
+#footer {
+	background-color: #2b2e2b;
+	/*min-height: 70px;*/
+}
+
+#clear {
+	clear: both;
+}
+
+div {
+	margin-top: 5px;
+	padding-top: 5px;
+}
+
+.background {
+	background-color: #2b2e2b;
+}
+
+#exemplu1 {
+	color: red;
+}
+
+span {
+	color: red;
+}
+
+ul.lista1 {
+	list-style-position: inside;
+	background-color: gray;
+}
+
+ol {
+	list-style-type: upper-roman;
+	list-style: none;
+}
+
+ul {
+	position: sticky;
+}
+
+nav {
+	padding: 10px;
+	background-color: black;
+	/*position: fixed;
+	top :0px;
+	width: 100%;*/
+	position: sticky;
+	position: -webkit-sticky;
+	top: 1px;
+}
+
+nav a {
+	color: white;
+	text-align: center;
+	padding: 13px 14px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: blue;
+}
+
+nav a:active {
+	background-color: red;
+}
+
+.active {
+	background-color: orange;
+}
+
+nav span {
+	float: right;
+	padding-right: 30px;
+}
+
+/*ce ii dupa ":" se numeste pseudo clasa*/
+
+/*nav a:last-child
+{
+
+}*/
+
+/*nav a:nth-child(5) 5 = n
+{
+	
+}*/
+
+.articole {
+	background-color: white;
+	padding: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.imagine-articol {
+	background-color: gray;
+	min-height: 200px;
+}
+
+#subsol-articol {
+	width: auto;
+	padding-bottom: 30px;
+}
+
+#data-publicarii {
+	width: 50%;
+	float: left;
+}
+
+#autor {
+	float: right;
+	width: 50%;
+	text-align: right;
+}
+
+#recent {
+	min-height: 100px;
+}
+
+#curs-valutar {
+	min-height: 150px;
+}
+
+@media only screen and (max-width: 600px) {
+	#content {
+		width: auto;
+	}
+	#sidebar {
+		float: none;
+		width: 100%;
+	}
+}
+
+.fa
+/*.fa-home*/
+
+	{
+	font-size: 20px;
+	color: white;
+	padding-right: 5px
+}
+
+/*.fa-1x
+{
+	font-size: 20px;
+}*/
+
+#footer {
+	width: auto;
+	color: white;
+	padding: 30px;
+	min-height: 50px;
+}
+
+#footer-left {
+	width: 40%;
+	float: left;
+}
+
+#footer-right {
+	width: 40%;
+	float: right;
+	text-align: right;
+}
+
+address a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button, input[type=submit]{
+	border: none;
+	background-color: #30222f;
+	color: white;
+	padding: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 24px;
+	cursor: pointer;
+	border-radius: 4px;
+	/*rotungire*/
+	outline: 0px;
+	outline-color: #30222f;
+	border: 3px solid #1c191c;
+	transition-duration: 0.5s;
+	/*animatie cand apare*/
+}
+
+button:hover, input[type=submit]:hover{
+	background-color: #1c191c;
+}
+
+button:active, input[type=submit]:active{
+	background-color: #1c211c;
+}
+
+.citesteMaiDeparte {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#articol2 {
+	/*display: none;*/
+	visibility: hidden;
+}
+
+#ex1 {
+	background-color: #d68bb7;
+	padding: 15px;
+}
+
+#ex1 li {
+	color: white;
+	padding: 5px;
+	background-color: #b56594;
+	list-style-type: decimal;
+	list-style-position: inside;
+	margin-top: 10px;
+	padding-left: 20px;
+}
+
+#ex1 li span {
+	margin-left: 15px;
+	background-color: #9e497b;
+	color: inherit;
+	padding: 5px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+label {
+	padding: 5px;
+	color: black;
+	display: inline-block;
+	/* ^ pt padding de top si bottom sa lucreze */
+}
+
+input {
+	color: black;
+}
+
+input[type=input]{
+	width: 50%;
+	color: blue;
+	padding: 5px;
+	border-radius: 3px;
+	border: 2px solid gray;
+}

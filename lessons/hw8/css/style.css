@@ -1,0 +1,33 @@
+.buttonCustom {
+    border-radius: 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.buttonPink {
+    background-color: #f90065;
+    color: whitesmoke;
+    border: 0px;
+    border-radius: 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.buttonPink:hover {
+    background-color: #9c003f;
+    color: whitesmoke;
+}
+
+.badgeBlue {
+    background-color: #1a166e;
+}
+
+#voteDiv {
+    box-shadow: 0 0 3px #ccc;
+}
+
+.customAlert {
+    background-color: #908fa6;
+    color: white;
+    border-radius: 0px;
+}

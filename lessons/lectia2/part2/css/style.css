@@ -1,0 +1,80 @@
+body
+{
+	background-color: gray;
+	color: #dfdaed;
+	background-image: url('D:\\HTML_step\\lectia2\\images\\windows.jpg');
+	background-size: cover; 
+	/*strech imagine la screen*/
+}
+
+header
+{
+	background-color: orange;
+	min-height: 50px;
+}
+
+#p1
+{
+	background-color: pink;
+}
+
+.pClass
+{
+	background-color: lightgreen;
+}
+
+#main
+{
+	background-color: #3e3d42;
+	min-height: 400px;
+	width: auto;
+}
+
+#content
+{
+	float: left;
+	width: 70%;
+	min-height: 300px;
+	margin-left: 10px;
+	padding: 10px;
+	/*padding ii fix ca mrgin dar caa din inauntru*/
+	border: 5px solid white;
+	box-shadow: 4px 4px 4px white;
+}
+
+#sidebar
+{
+	float: right;
+	width: 20%;
+	margin-right: 10px;
+	min-height: 300px;
+	padding: 10px;
+	border: 5px double /*dotted*/ white;
+	box-shadow: -4px 4px 4px white;
+}
+
+.background
+{
+	background-color: #302f33;
+}
+
+.font
+{
+	font-size: 20px;
+	color: orange;
+}
+
+#footer
+{
+	background-color: #302f33;
+}
+
+#clear
+{
+	clear: both;
+}
+
+div
+{
+	margin-top: 5px;
+}
