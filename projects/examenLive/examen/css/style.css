@@ -1,86 +1,243 @@
-/* No CSS */
 body {
-    background-color: #e7e7e7;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #ffffff;
+    font-family: "Roboto", sans-serif;
 }
 
-.darkBlueBg, .myNavbar {
-    background-color: #22223b;
-    color: #F2E9E4;
+.header {
+    padding: 25px 0px 25px 0px;
 }
 
-.myNavbar {
-    font-size: large;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: #4A4E69;
-    box-shadow: 0px 1px 2px 1px #4A4E69;
-    opacity: .9;
+.navbar .nav-item {
+    /* padding: 0px 5px 0px 5px; */
+    /* padding: 0px 5px 0px 5px; */
 }
 
-.myNavbar a, .myNavbar span {
-    color: #F2E9E4;
+.nav-link {
+    text-decoration: none;
+    color: #bcbcbc;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
 }
 
-.myNavbar .active {
-    background-color: #4A4E69;
+.navbar .active a {
+    background-color: #ffbb42;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.bg-blue {
+    background-color: #709dca;
+    color: white;
+}
+
+.request {
+    padding: 110px 0px 350px 0px;
+}
+
+.title {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "Gotham", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.request__title {
+}
+
+.request__text {
+}
+
+.text {
+    font-size: 16px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+}
+
+.request__button,
+.about__button {
+    /* padding: 45px 10px; */
+    background: #ffbb42;
+    color: white;
+}
+
+.services {
+    padding: 100px 0px 160px 0px;
+    color: #394b50;
+}
+
+.services__header {
+    padding: 0px 0px 60px 0px;
+}
+
+.services__body {
+    font-family: "Lato", sans-serif;
+}
+
+.services__body i {
+    font-size: 50px;
+}
+
+.services__name {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-left: 40px;
+}
+
+.services__description {
+    font-size: 13px;
+    color: #7b7b7b;
+    margin-left: 40px;
+    font-family: "Open Sans";
+}
+
+.services__body .row {
+    margin-top: 40px;
+}
+
+.about {
+    background-color: #ffc155;
+    color: white;
+    text-align: left;
+}
+
+.about__title {
+    padding: 0px 0px 0px 0px;
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+}
+
+.about__desc {
+    text-align: left;
+    padding: 165px 265px 0px 80px;
+}
+
+.about__text {
+    text-align: left;
+    margin: 20px 0px 0px 0px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.about__button,
+.pricing__button {
+    color: white;
+    background-color: inherit;
+    border: 1px solid #e7ad48;
+    padding: 14px 32px;
+    text-transform: uppercase;
+    margin: 33px 0px 0px 0px;
+}
+
+.pricing {
+    background: #e7edf3;
+    margin: 0px 0px 0px 0px;
+    padding: 135px 0px 160px 0px;
+}
+
+.pricing__title {
+    color: #394b50;
+    font-size: 30px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.pricing__text {
+    font-family: "Lato Light";
+    font-weight: 300;
+    color: #75888d;
+    font-size: 18px;
+    padding: 0px 0px 0px 0px;
+    margin: -10px 0px 0px 50px;
+}
+
+.pricing__cards {
+    padding: 0px 0px 0px 0px;
+    margin: 50px 0px 0px 0px;
+}
+
+.pricing__card {
+    padding: 50px 30px 50px 30px;
+    background: #ffffff;
+    border: 1px solid #ccd5df;
+    text-align: center;
+    text-transform: uppercase;
     border-radius: 5px;
 }
 
-#myLogo {
-    font-size: x-large;
-    color: #0d4d5d;
-    /* background-color: #F2E9E4; */
-    background: linear-gradient(to top, #9a8c98 0%, #c9ada7 100%);
-    border-radius: 10px;
-    font-weight: bold;
-    font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
-    border: 2px solid #746662;
+.pricing__name {
+    /* Style for "Basic plan" */
+    color: #818b95;
+    font-family: Lato;
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
-.carousel-item {
-    perspective: 1000px;
+.pricing__price {
+    color: #ffbb42;
+    font-family: Lato;
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
-.myButton {
-    display: inline-block;
+.pricing__month {
+    display: block;
+    font-size: 12px;
+    font-weight: 100;
+    margin: -10px 0px 0px 0px;
+    color: #818b95;
+}
+
+.pricing__button {
+    background-color: #ffbb42;
+    font-size: 14px;
+    font-family: Lato;
+    padding: 15px 20px 15px 20px;
+    border-radius: 3px;
+    margin: 35px 0px 0px 0px;
+}
+
+.pricing__desc {
+    margin: 30px 0px 35px 0px;
+}
+
+.pricing__desctext {
+    padding: 16px 0px 16px 0px;
+    color: #b5bbc1;
+    border-top: 1px solid #e2e9f0;
+    margin: 0px 0px 0px 0px;
+}
+
+.pricing__card-active {
+    background-color: #709dca;
+    padding: 80px 30px 80px 30px;
+    
+    z-index: 1;
+}
+
+.pricing__card-active .pricing__name,
+.pricing__card-active .pricing__price,
+.pricing__card-active .pricing__month,
+.pricing__card-active .pricing__desctext {
+    color: white;
+}
+
+
+.pricing__dollar {
+    font-size: 30px;
+    vertical-align: text-top;
     font-weight: 400;
-    color: #ffffff;
-    text-align: center;
-    user-select: none;
-    background-color: transparent;
-    border: 1px solid transparent;
-    padding: .375rem .75rem;
-    font-size: 1.5rem;
-    line-height: 1.5;
-    border-radius: .25rem;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-.myButtonOutline {
-    color: #C9ADA7;
-    border-color: #C9ADA7;
-}
-
-.myButtonOutline:hover {
-    color:  white;
-    border-color: #C9ADA7;
-    background-color: #C9ADA7;
-}
-
-/* .myButton:hover {
-    border: solid #D7C9C1 2px;
-    background: #CFC0B8;
-    background-image: linear-gradient(to bottom, #CFC0B8, #FBF2ED);
-    border-radius: 15px;
-    text-decoration: none;
-    color: #62525F;
-} */
-
-.myHr {
-    color: rgba(74, 78, 105, 0.945);
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(74, 78, 105, 1), rgba(0, 0, 0, 0));
-    color: #9A8C98;
-    height: 1px;
-    width: 100%
+.how__title {
+    margin: 150px 0px 0px 0px;
 }
