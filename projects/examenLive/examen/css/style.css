@@ -1,0 +1,86 @@
+/* No CSS */
+body {
+    background-color: #e7e7e7;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.darkBlueBg, .myNavbar {
+    background-color: #22223b;
+    color: #F2E9E4;
+}
+
+.myNavbar {
+    font-size: large;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #4A4E69;
+    box-shadow: 0px 1px 2px 1px #4A4E69;
+    opacity: .9;
+}
+
+.myNavbar a, .myNavbar span {
+    color: #F2E9E4;
+}
+
+.myNavbar .active {
+    background-color: #4A4E69;
+    border-radius: 5px;
+}
+
+#myLogo {
+    font-size: x-large;
+    color: #0d4d5d;
+    /* background-color: #F2E9E4; */
+    background: linear-gradient(to top, #9a8c98 0%, #c9ada7 100%);
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+    border: 2px solid #746662;
+}
+
+.carousel-item {
+    perspective: 1000px;
+}
+
+.myButton {
+    display: inline-block;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.myButtonOutline {
+    color: #C9ADA7;
+    border-color: #C9ADA7;
+}
+
+.myButtonOutline:hover {
+    color:  white;
+    border-color: #C9ADA7;
+    background-color: #C9ADA7;
+}
+
+/* .myButton:hover {
+    border: solid #D7C9C1 2px;
+    background: #CFC0B8;
+    background-image: linear-gradient(to bottom, #CFC0B8, #FBF2ED);
+    border-radius: 15px;
+    text-decoration: none;
+    color: #62525F;
+} */
+
+.myHr {
+    color: rgba(74, 78, 105, 0.945);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(74, 78, 105, 1), rgba(0, 0, 0, 0));
+    color: #9A8C98;
+    height: 1px;
+    width: 100%
+}
