@@ -97,6 +97,7 @@ a:hover {
    background-color: hsl(243, 80%, 62%);
    transform-origin: bottom left;
    transition: transform 0.3s ease-in-out;
+   /* animation: logoAnimationB 2s infinite; */
 }
 
 .logo::before {
@@ -110,6 +111,7 @@ a:hover {
    background-color: hsl(243, 80%, 62%);
    transform-origin: bottom right;
    transition: transform 0.3s ease-in-out;
+   /* animation: logoAnimationT 2s infinite; */
 }
 
 .logo:hover::before {
@@ -121,6 +123,32 @@ a:hover {
    transform: scaleX(0);
    transform-origin: bottom right;
 }
+
+/* @keyframes logoAnimationT {
+   0% {
+      transform: scaleX(1);
+   }
+   50% {
+      transform: scaleX(0);
+   }
+   100% {
+      transform-origin: bottom left;
+      transform: scaleX(1);
+   }
+}
+
+@keyframes logoAnimationB {
+   0% {
+      transform: scaleX(1);
+   }
+   90% {
+      transform: scaleX(0);
+   }
+   100% {
+      transform-origin: bottom right;
+      transform: scaleX(1);
+   }
+} */
 
 .carousel-item {
    perspective: 1000px;
@@ -216,25 +244,28 @@ a:hover {
 }
 
 .nav-tabs li {
-   display: block;
+   display: flex;
    font-size: 20px;
    background-color: #d4c0bb;
    border-radius: 4px;
    width: 19%;
-   align-content: center;
 }
 
 .nav-tabs a {
    border-radius: 3px;
-   display: block;
+   display: flex;
    text-decoration: none;
    color: #13141f;
    background-color: #d4c0bb;
    padding: 10px 20px;
    transition: 0.2s linear;
-   align-content: center;
    text-align: center;
+   align-items: center;
+   justify-content: center;
    text-transform: capitalize;
+   height: 100%;
+   width: 100%;
+   margin: auto 0;
 }
 
 .nav-tabs .active,
@@ -658,8 +689,12 @@ a:hover {
 
 /* gallery */
 
-.gallery-page {
+.container-fluid.gallery-page {
+   min-height: 100%;
    background: #13141f;
+}
+
+.container .gallery-page-inner {
    min-height: 100vh;
    color: #f2e9e4;
 }
@@ -698,62 +733,163 @@ a:hover {
 }
 
 .slideUpBtn {
-    padding: 12px 24px;
-    background-color: transparent;
-    border: 2px solid #191b2c;
-    border-radius: 6px;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.25s cubic-bezier(1,.15,.34,.92)
+   padding: 12px 24px;
+   background-color: transparent;
+   border: 2px solid #191b2c;
+   border-radius: 6px;
+   position: relative;
+   overflow: hidden;
+   transition: all 0.25s cubic-bezier(1, 0.15, 0.34, 0.92);
 }
 
 .slideUpBtn span {
-    display: inline-block;
-    transition: inherit;
-    color: #191b2c;
+   display: inline-block;
+   transition: inherit;
+   color: #191b2c;
 }
 
 .slideUpBtn:hover span {
-    opacity: 0;
-    transform: translateY(-100%)
+   opacity: 0;
+   transform: translateY(-100%);
 }
 
 .slideUpBtn::before {
-    content: "";
-    background-color: #191b2c;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    transform: translateY(100%);
-    transition: inherit;
-    width: 100%;
-    transition: transform 0.25s cubic-bezier(1,.15,.34,.92)
+   content: "";
+   background-color: #191b2c;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   transform: translateY(100%);
+   transition: inherit;
+   width: 100%;
+   transition: transform 0.25s cubic-bezier(1, 0.15, 0.34, 0.92);
 }
 
 .slideUpBtn::after {
    font-family: "Font Awesome 5 Pro";
-    content: '\f00c';
-    align-items: center;
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    left: 0;
-    position: absolute;
-    top: 0;
-    transition: inherit;
-    transform: translateY(100%);
-    width: 100%;
-
+   content: "\f00c";
+   align-items: center;
+   display: flex;
+   height: 100%;
+   justify-content: center;
+   left: 0;
+   position: absolute;
+   top: 0;
+   transition: inherit;
+   transform: translateY(100%);
+   width: 100%;
 }
 
 .slideUpBtn:hover::before {
-    transform: translateY(0) scale(3);
-    transition-delay: .025s;
+   transform: translateY(0) scale(3);
+   transition-delay: 0.025s;
 }
 
 .slideUpBtn:hover::after {
-    opacity: 1;
-    color: hsl(222, 100%, 95%);
-    transform: translateY(0);
+   opacity: 1;
+   color: hsl(222, 100%, 95%);
+   transform: translateY(0);
+}
+
+/* appart page */
+
+.container-fluid.appratament-page {
+   background-color: #191b2c;
+}
+
+.container.appratament-page {
+   min-height: 90vh;
+   color: #e7d6d2;
+}
+
+.appratament-page .row {
+   padding: 50px 0;
+}
+
+.appratament-page__text {
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   -webkit-flex-wrap: nowrap;
+   -ms-flex-wrap: nowrap;
+   flex-wrap: nowrap;
+   -webkit-justify-content: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   -webkit-align-content: flex-start;
+   -ms-flex-line-pack: start;
+   align-content: flex-start;
+   -webkit-align-items: flex-start;
+   -ms-flex-align: start;
+   align-items: flex-start;
+
+   font-size: 20px;
+}
+
+.appratament-page__title {
+   font-size: 40px;
+   font-weight: 700;
+   text-align: left;
+   align-self: flex-start;
+   text-transform: uppercase;
+   margin-bottom: 15px;
+}
+
+.appratament-page__desc {
+   text-align: left;
+   width: 75%;
+   display: block;
+}
+
+.appratament-page__descitem {
+   text-align: left;
+   display: flex;
+   border-bottom: 1px solid #fff;
+   padding: 5px 10px;
+   text-transform: uppercase;
+   justify-content: space-between;
+}
+
+.appratament-page__descitem span {
+   text-transform: lowercase;
+}
+
+.appratament-page__image {
+   border-radius: 10px;
+   box-shadow: 10px 10px 20px #0d0e16, -10px -10px 20px #262942;
+}
+
+@media (max-width: 991px) {
+   .appratament-page__text {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      margin-bottom: 25px;
+   }
+
+   .appratament-page__title {
+      align-self: inherit;
+   }
+
+   .appratament-page__image {
+      display: block;
+      margin: 0 auto;
+   }
+}
+
+@media (max-width: 375px) {
+   .appratament-page__text {
+      font-size: 16px;
+   }
+
+   .appratament-page__title {
+      font-size: 25px;
+   }
 }
